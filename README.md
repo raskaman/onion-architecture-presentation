@@ -1,5 +1,8 @@
 # Onion Architecture Presentation
 
+Preview presentation here:
+http://htmlpreview.github.io/?https://github.com/raskaman/onion-architecture-presentation/blob/master/index.html#/welcome
+
 This is about software architecture that is structured like the layers of an onion.
 
 Onion Architecture is a set of principles that defines how we design a piece of software. It allow us to design software that is testable, maintainable, and independent of infrastructure.
