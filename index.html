@@ -1,0 +1,165 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Onion Architecture Presentation</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Audiowide">
+   
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <script src="js/prefixfree.min.js" type="text/javascript"></script>
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+    
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+    <div id="impress" data-perspective="300">
+
+        <div id="welcome" class="step" data-x="0" data-y="0" data-z="10000" data-rotate-x="-90" data-desc="Welcome">
+            <h1>Welcome</h1>
+        </div>
+
+        <div id="onion" class="step slide" data-x="0" data-y="0" data-z="0" data-desc="Onion Architecture">
+            <h1 class="animated zoomInLeft">Onion Architecture</h1>
+            <br />
+            <img src="images/onion_house.jpg" height="370" class="animated rotateInUpLeft" />
+            <img src="images/The_Onion_by_raun-625x630.jpg" height="370" class="right animated lightSpeedIn" />
+            <p class="animated zoomInRight">No this kind of architecture!</p>
+        </div>
+
+        <div id="whatIsArchitecture" class="step centerText" data-x="0" data-y="0" data-z="-1000" data-rotate-x="0" data-desc="What is Architecture?">
+            <h1>What is Architecture?</h1>
+            <img src="images/MappingArchitectureLandscape.gif" />
+        </div>
+        
+        <div id="t1s2" class="step" data-x="0" data-y="1000" data-z="-3000" data-rotate-x="0" data-desc="What is Architecture? Video">
+            <iframe width="800" height="600" src="https://www.youtube.com/embed/E55OcGB0L8o" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div id="onion-principles" class="step slide" data-x="500" data-y="0" data-z="500" data-rotate-y="-90" data-desc="Onion Architecture Principles">
+            <h2 class="animated slideInLeft">Onion Architecture Principles</h2>
+
+            <!--<ul>
+                <li class="animated slideInRight delay1">Outer layers depend on inner layers</li>
+                <li class="animated slideInRight delay2">Domain Model sits at the center</li>
+                <li class="animated slideInRight delay3">Inner layers defines contracts; outer layers implement those contracts</li>
+                <li class="animated slideInRight delay4">Infrastructure and UI concerns are pushed to the edge</li>
+            </ul>-->
+            <img src="images/OnionSimplified.png" class="center" style="width: 545px; top:55px;" />
+        </div>
+
+        <div id="benefits" class="step slide" data-x="1000" data-y="0" data-z="500" data-rotate-y="-90" data-desc="Bring the onion">
+            <h2>Benefits</h2>
+            <ul style="font-size:22px;">
+                <li>Loose coupling</li>
+                <li>Testable</li>
+                <li>Maintainable</li>
+                <li>Business logic independent of infrastructure (Database, UI, services, etc)</li>
+                <li>Business logic focuses on business problem, not on infrastructure concerns</li>
+                <li>The Application structure is easier to follow</li>
+                <li>Compiler enforces dependencies, cannot reference code on outer layers from inner layers</li>
+            </ul>
+            <img src="images/happyOnion.png" />
+            <!--<img src="images/Benefits.jpg" width="600px" class="center" />-->
+        </div>
+
+        <div id="traditionalNlayer" class="step slide" data-x="1500" data-y="0" data-z="500" data-rotate-y="-90" data-desc="Traditional N-Layer Architecture">
+            <h2>Traditional N-Layer Architecture</h2>
+            <img src="images/TraditionalNLayer.png" />
+        </div>
+
+        <div id="spaghetti" class="step slide" data-x="2000" data-y="0" data-z="500" data-rotate-y="-90" data-desc="Spaghetti Architecture">
+            <h2>Spaghetti Architecture</h2>
+            <img src="images/Traditional3Layer.png" />
+        </div>
+
+        <div id="whyOnion" class="step slide" data-x="0" data-y="0" data-z="1000" data-rotate-y="-180" data-desc="Why onion?">
+            <h1>Why Onions?</h1>
+        </div>
+
+        <div id="shrek" class="step" data-x="0" data-y="0" data-z="2000" data-rotate-y="-180" data-desc="Shrek - Onion scene">
+            <video controls="controls">
+                <source src="media/Shrek_Onion.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+        <div id="bringTheOnion" class="step" data-x="0" data-y="0" data-z="2500" data-rotate-y="-180" data-desc="Bring the onion">
+            <h2>Bring the onion</h2>
+            <img src="images/Onion.png" class="center" />
+        </div>
+
+        <div id="onionDiagram" class="step" data-x="0" data-y="0" data-z="3000" data-rotate-y="-180" data-desc="Onion Architecture - The Onion">
+            <h2>Onion Architecture - The Onion</h2>
+            <img src="images/Onion_Architecture_Diagram.png" class="center" />
+        </div>
+        
+        <div id="onionStructure" class="step slide" data-x="0" data-y="0" data-z="3500" data-rotate-y="-180" data-desc="Onion Structure">
+            <h2>Onion Architecture</h2>
+            <img src="images/structure.png" class="structure" />
+            <img src="images/Onion_Architecture_Diagram.png" class="onion" />
+        </div>
+
+        <div id="layerView" class="step slide" data-x="-500" data-y="0" data-z="500" data-rotate-y="-270" data-desc="Onion Architecture - Layers view">
+            <h3>Onion Architecture - Layers view</h3>
+            <img src="images/onion-arch-layer.png" />
+        </div>
+
+        <div id="review" class="step slide" data-x="-1000" data-y="0" data-z="500" data-rotate-y="-270" data-desc="Onion Architecture - Review">
+            <h3>Onion Architecture - Review</h3>
+            <!--<img src="images/definitions.png" />-->
+            <img src="images/review.png" class="center" />
+        </div>
+
+        <div id="demo" class="step" data-x="-1500" data-y="0" data-z="500" data-rotate-y="-270" data-desc="Demo">
+            <img src="images/demo-time.jpg" class="center" style="width:600px;" />
+        </div>
+
+        <div id="overview" class="step" data-x="0" data-y="-2000" data-z="-1000" data-scale="3" data-rotate-x="0" data-rotate-y="-180" data-desc="Thank you">
+            <h1>Thank you</h1>
+        </div>
+
+    </div>
+   
+    <div class="hint">
+        <p>Use a spacebar or arrow keys to navigate</p>
+    </div>
+
+    <a id="menu">
+        <span class="line"></span>
+    </a>
+
+    <div id="navigation" class="animated bounceInLeft">
+    </div>
+
+    <script>
+        if ("ontouchstart" in document.documentElement) {
+            document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+        }
+    </script>
+  
+    <script src="js/impress.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        window.onload = function () {
+            impress().init();
+        };
+
+        
+    </script>
+  
+</body>
+</html>

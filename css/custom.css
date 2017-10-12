@@ -1,0 +1,234 @@
+﻿#menu {
+    pointer-events:auto;
+    z-index: 3000;
+    width: 3em;
+    position: fixed;
+    top: 20px; /* Header Height */
+    right: 30px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    color: #5f5f5f;
+    font-weight: bold;
+    display: inline-block;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(240, 240, 240));
+    width: 36px; 
+    height: 30px;
+    padding: 2px 0 0 0;
+    box-sizing: border-box;
+}
+
+#menu:hover {
+    background-image: linear-gradient(#e63d44,#c11a22);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.22);
+}
+
+#menu .line {
+    background: rgb(184,184,184);
+    border-radius: 2px;
+    box-shadow: 0 5px 0 0 rgb(184, 184, 184), 0 -5px 0 0 rgb(184, 184, 184);    
+    display: block;
+    margin: 10px auto 0 auto;
+    height: 3px;
+    width: 16px;
+    content: " ";
+    overflow: visible;
+}
+
+#menu:hover .line {
+    background: rgb(255,255,255);
+    box-shadow: 0 5px 0 0 rgb(255,255,255), 0 -5px 0 0 rgb(255,255,255);    
+}
+
+#navigation {
+    position:fixed;
+    display:none;
+    height:100%;
+    background-color:rgba(199, 30, 30, 0.61);
+    font-size:50px;
+    padding:10px;
+    overflow:scroll;
+}
+
+#navigation a {
+    pointer-events: auto;
+    display:inline-block;
+    margin-bottom:10px;
+    font-size:30px;
+}
+
+.hint {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    background: rgba(0,0,0,0.5);
+    color: #EEE;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    z-index: 100;
+    opacity: 0;
+    -webkit-transform: translateY(400px);
+    -moz-transform: translateY(400px);
+    -ms-transform: translateY(400px);
+    -o-transform: translateY(400px);
+    transform: translateY(400px);
+    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+    -moz-transition: opacity 1s, -moz-transform 0.5s 1s;
+    -ms-transition: opacity 1s, -ms-transform 0.5s 1s;
+    -o-transition: opacity 1s, -o-transform 0.5s 1s;
+    transition: opacity 1s, transform 0.5s 1s;
+}
+
+.impress-on-welcome .hint {
+     opacity: 1;
+    -webkit-transform: translateY(150px);
+    -moz-transform:    translateY(150px);
+    -ms-transform:     translateY(150px);
+    -o-transform:      translateY(150px);
+    transform:         translateY(150px);
+    -webkit-transition: opacity 0,1s 0.5ss, -webkit-transform 1s 3s;
+    -moz-transition:    opacity 0,1s 0.5ss,    -moz-transform 1s 3s;
+    -ms-transition:     opacity 0,1s 0.5ss,     -ms-transform 1s 3s;
+    -o-transition:      opacity 0,1s 0.5ss,      -o-transform 1s 3s;
+    transition:         opacity 0,1s 0.5ss,         transform 1s 3s;
+}
+
+.impress-enabled .hint {
+     display: block;
+}
+
+.hint p {
+background:url('../images/arrows.png') 30px 30px no-repeat;
+display: inline;
+padding: 20px 40px 20px 150px;
+}
+
+.active .animated {
+  opacity:0;
+}
+
+.present.active .animated {
+  opacity:1!important;
+}
+
+.left {
+    position:relative;
+    float:left;
+}
+
+.right {
+    position:relative;
+    float:right;
+}
+
+.delay1 {
+    animation-delay: 1s;
+}
+
+.delay2 {
+    animation-delay: 2s;
+}
+
+.delay3 {
+    animation-delay: 3s;
+}
+
+.delay4 {
+    animation-delay: 4s;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#welcome h1, #overview h1 
+{
+    font-size: 153px;
+    color:black;
+}
+
+#overview h1 {
+    position:absolute;
+    top:-330px;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#bringTheOnion h2, #onionDiagram h2 {
+    position:absolute;
+    top:-325px;
+}
+
+#whyOnion h1 {
+    position:absolute;
+    top:280px;
+    left:206px;
+}
+
+h1 {
+    font-family: 'Audiowide', serif;
+    font-weight:bold;
+    font-size: 68px;   
+    padding-bottom:30px;
+    padding-top:10px;
+    line-height:70px;
+    color: rgb(61, 61, 61);
+}
+
+h2 {
+    font-family: 'Audiowide', serif;
+    font-weight:bold;
+    font-size: 46px;
+    padding-bottom:30px;
+    color: rgb(61, 61, 61);
+}
+
+h3 {
+    font-family: 'Audiowide', serif;
+    font-weight:bold;
+    font-size: 40px;
+    padding-bottom:30px;
+    color: rgb(61, 61, 61);
+}
+
+.slide ul {
+    list-style:disc;
+    padding-left:60px;
+}
+
+#demoSite #demoIframe {
+    transform: scale(1.3);
+}
+
+.centerText {
+    text-align:center;
+}
+
+#shrek.step {
+    width:inherit !important;
+}
+
+#onionStructure .structure {
+    width:440px;
+}
+
+#onionStructure .onion {
+    position:absolute;
+    width:331px;
+    top:153px;
+}
